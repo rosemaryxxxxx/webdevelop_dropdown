@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap NavBar</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="css/bootstrap-4-navbar.css" rel="stylesheet">
+        <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+
+        <!--Demo purpose css-->
+        <style>
+            body {
+                padding-top: 50px;
+            }
+            .navbar {
+                margin:  40px 0;
+            }
+
+        </style>
+    </head>
+    <body>
+
+
+          <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
+
+          <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>  
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+               <div class="item active">
+                  <img src="./img/1.jpg" alt="First slide">
+               </div>
+               <div class="item">
+                  <img src="./img/2.jpg" alt="Second slide">
+               </div>
+               <div class="item">
+                  <img src="./img/3.jpg" alt="Third slide">
+               </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <button class="carousel-control left" type="button" href="#myCarousel" data-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control right" type="button" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            <!-- <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">‹</a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">›</a> -->
+         </div>
+
+
+        <div class="container">
+
+            <!-- Static navbar -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand btn-primary" href="#">重庆大学大数据与软件学院</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link"  id="0" href="#">主页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                本科教育
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" id="10" href="#">软件工程本科专业</a></li>
+                                <li><a class="dropdown-item" id="11" href="#">数据科学与大数据技术专业</a></li>
+                                <li><a class="dropdown-item"  id="12" href="#">人工智能专业</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                研究生教育
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" id="20" href="#">硕士培养</a></li>
+                                <li><a class="dropdown-item" id="21" href="#">博士培养</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                学习
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" id="30" href="#">数据库</a></li>
+                                <li><a class="dropdown-item" id="31" href="#">数据结构</a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">编程语言</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" id="320" href="#">C</a></li>
+
+                                        <li><a class="dropdown-item dropdown-toggle" href="#">C++</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" id="3210" href="#" >指针</a></li>
+                                                <li><a class="dropdown-item" id="3211" href="#" >STL</a></li>
+                                                <li><a class="dropdown-item" id="3212" href="#" >模板</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item dropdown-toggle" href="#">Java</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" id="3220" href="#" >封装</a></li>
+                                                <li><a class="dropdown-item" id="3221" href="#" >继承</a></li>
+                                                <li><a class="dropdown-item" id="3222" href="#" >多态</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div id = "myDiv">
+                    
+                        重庆大学大数据与软件学院是国家发改委和教育部于2001年12月批准成立的首批35所国家示范性软件学院之一，主要培养高层次、复合型、实用型、国际化的创新型软件人才。为满足国家大数据、人工智能发展战略对高层次人才培养的需求，2018年3月更名为大数据与软件学院。
+    
+                        学院现有教职工60多人，教授15人、副教授25人，其中博士生导师13人、硕士研究生导师38人，“百人计划研究员”3人，讲师9人，弘深博士后1人，享受政府特殊津贴人员1人，重庆市名师1人。在校本科生、硕士研究生、博士研究生近千人。
+                        
+                        学院现有软件工程博士一级学科，2012年国家学科评估位列全国第11位，2017年学科评估中被评为B+，是重庆市重点学科。软件工程专业于2007年入选国家“特色专业”，2008年获批国家“软件人才培养模式创新实验区”，2012年入选国家“卓越工程师计划”， 2018年获批成为重庆市本科高校新型二级学院，2018年获批为重庆市“一流专业”和重庆市“大数据智能化类特色专业”，2019年入选国家级一流本科专业建设点。学院于2005年和2014年两次独立荣获国家教学成果二等奖，获得重庆市教学成果奖一等奖3次。</p>
+  
+                    
+                </div>
+            </div>
+
+            <div class="jumbotron">
+                <p>友情链接</p>
+                    <a class="btn btn-lg btn-success" href="http://www.cse.cqu.edu.cn/" target="_blank" role="button">重庆大学大数据与软件学院</a>
+                    <a class="btn btn-lg btn-danger" href="https://www.thss.tsinghua.edu.cn/" target="_blank" role="button">清华大学软件学院</a>
+                    <a class="btn btn-lg btn-primary" href="http://www.cst.zju.edu.cn/"  target="_blank" role="button">浙江大学软件学院</a>
+                    <a class="btn btn-lg btn-info" href="http://www.se.sjtu.edu.cn/"  target="_blank" role="button">上海交通大学软件学院</a>
+            </div>
+
+            <!-- </div> <!-- /container -->
+            
+     <!--scipt// -->
+            
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+    <script>
+
+        var str = new Array();
+        str =  [  
+            "重庆大学大数据与软件学院是国家发改委和教育部于2001年12月批准成立的首批35所国家示范性软件学院之一，主要培养高层次、复合型、实用型、国际化的创新型软件人才。为满足国家大数据、人工智能发展战略对高层次人才培养的需求，2018年3月更名为大数据与软件学院。学院现有教职工60多人，教授15人、副教授25人，其中博士生导师13人、硕士研究生导师38人，“百人计划研究员”3人，讲师9人，弘深博士后1人，享受政府特殊津贴人员1人，重庆市名师1人。在校本科生、硕士研究生、博士研究生近千人。",
+            "为了适应我国经济结构战略性调整和软件产业发展对人才的迫切要求，实现我国软件人才培养的跨越式发展，教育部和国家计委于2001年12月批准重庆大学建设国家示范性软件学院，设立软件工程本科专业。新时期，国务院印发了《促进大数据发展行动纲要》和《新一代人工智能发展规划》。教育部制定了《高等学校人工智能创新行动计划》。为满足国家发展规划对大数据智能化软件人才的培养需求，2018年1月重庆大学软件学院正式更名为重庆大学大数据与软件学院。",
+            "数据科学与大数据技术专业的学生在系统学习计算机系统、软件工程和数据科学相关理论的基础上，重点掌握大数据采集、存储、管理、分析与应用等核心专业知识和技能，接受数据科学思维教育和大数据技术的实践训练，具备开展创新性研究和应用开发所需要的基础理论与动手实践能力。",
+            "人工智能是根据国际学科发展趋势、适应国家发展战略需求，面向新一代信息技术发展与产业变革而建立的新专业。该专业由核心理论、相关技术以及产业应用组成，涉及了包括自然科学、工程技术、信息技术、人文科学与社会科学的大量理论知识与技术方法，是融合了软件工程、计算机科学与技术、数学、统计学等多门学科的典型交叉学科。",       
+            "重庆大学大数据与软件学院设有软件工程一级学科博士授权点、硕士授权点和软件工程领域专业硕士学位授权点。基于软件工程学科基础，紧跟大数据、人工智能等科技前沿，围绕服务计算与软件服务工程、软件项目管理、嵌入式系统及软件、智能穿戴与物联网、分布式系统与云计算、数据分析与大数据技术、人工智能与机器学习、网络空间安全理论与技术、大数据安全与隐私保护等领域开展研究。",
+            "软件工程专业拥有一支高水平、复合型且有国际化背景的师资队伍，现有教育部新世纪优秀人才5人、教育部计算机教学指导委员会委员1人；重庆市名师1人，重庆市学术技术带头人4名，重庆市高校教学团队负责人1人。拥有硕士研究生导师40名（含博导12人），其中教授13人、副教授23人。先后承担国家973计划课题、国家重点研发计划课题、国家发改委高技术服务业研发及产业化重大专项、国家自然基金、重庆市重点产业共性关键技术创新专项、重庆市科技计划项目基础与前沿研究计划等一系列国家和地方政府科研项目以及企业技术研发项目，年均科研经费800万元、发表高水平学术论文100篇左右。软件工程学科在2012年全国高校学科评估中位列第11位，在2017年全国高校学科评估中被评为B+。",
+            "Database是按照数据结构来组织、存储和管理数据的仓库，它产生于距今六十多年前，随着信息技术和市场的发展，特别是二十世纪九十年代以后，数据管理不再仅仅是存储和管理数据，而转变成用户所需要的各种数据管理的方式。数据库有很多种类型，从最简单的存储有各种数据的表格到能够进行海量数据存储的大型数据库系统都在各个方面得到了广泛的应用。",   
+            "数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。数据结构往往同高效的检索算法和索引技术有关。",
+            "C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。",
+            "若有一个变量专门用来存放另一个变量的地址，那么就称它为“指针变量”。也就是说，指针变量里面存放的是指针，即地址。",
+            "STL 是 C++ 标准程序库的核心。STL 内的所有组件都由模板构成，其元素可以是任意型别。程序员通过选用恰当的群集类别调用其成员函数和算法中的数据即可，但代价是 STL 晦涩难懂。",
+            "c++模板是泛型编程的基础,所谓泛型编程也是一种思想,一种抽象数据类型,但是泛型是不属于面向对象,它是面向对象的补充和发展。",
+            "封装，即隐藏对象的属性和实现细节，仅对外公开接口，控制在程序中属性的读和修改的访问级别；",
+            "继承的本质是对某一批类的抽象,从而实现对现实世界更好的建模。",
+            "多态也可定义为“一种将不同的特殊行为和单个泛化记号相关联的能力”。多态可分为变量多态与函数多态。"
+        ];
+
+        var operator1 = document.getElementsByClassName("dropdown-item");
+        for(var i =0;i<operator1.length;i++){
+            operator1[i].addEventListener('click',function(){
+               if(this.id=="10"){
+                    document.getElementById("myDiv").innerText=str[1];
+                }else if(this.id=="11"){
+                    document.getElementById("myDiv").innerText=str[2];
+                }else if(this.id=="12"){
+                    document.getElementById("myDiv").innerText=str[3];
+                }else if(this.id=="20"){
+                    document.getElementById("myDiv").innerText=str[4];
+                }else if(this.id=="21"){
+                    document.getElementById("myDiv").innerText=str[5];
+                }else if(this.id=="30"){
+                    document.getElementById("myDiv").innerText=str[6];
+                }else if(this.id=="31"){
+                    document.getElementById("myDiv").innerText=str[7];
+                }else if(this.id=="320"){
+                    document.getElementById("myDiv").innerText=str[8];
+                }else if(this.id=="3210"){
+                    document.getElementById("myDiv").innerText=str[9];
+                }else if(this.id=="3211"){
+                    document.getElementById("myDiv").innerText=str[10];
+                }else if(this.id=="3212"){
+                    document.getElementById("myDiv").innerText=str[11];
+                }else if(this.id=="3220"){
+                    document.getElementById("myDiv").innerText=str[12];
+                }else if(this.id=="3221"){
+                    document.getElementById("myDiv").innerText=str[13];
+                }else if(this.id=="3222"){
+                    document.getElementById("myDiv").innerText=str[14];
+                }
+             });
+            }
+
+            //主页
+            var operator2 = document.getElementsByClassName("nav-item active");
+        for(var i =0;i<operator2.length;i++){
+            operator2[i].addEventListener('click',function(){
+                if(this.id=="0"){
+                    document.getElementById("myDiv").innerText=str[0];
+                }
+             });
+            }
+
+
+    </script>
+ 
+<!-- javascript link file name  -->
+        <script src="js/bootstrap-4-navbar.js"></script>
+        <script src="./jQuery/jquery-3.6.1.min.js"></script>
+        <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
